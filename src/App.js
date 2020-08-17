@@ -1,24 +1,49 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import FunctionComponentI, { FunctionComponentII } from './function_compoment';
+import ClassComponent from './class_component';
+import StateComponent from './class_component/state_component';
+import FStateComponent from './function_compoment/f_state_component';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {
+        // Function component 1 ending
+        // Multiline with children
+      }
+      <FunctionComponentI name='Ujan'>
+        <div></div>
+      </FunctionComponentI>
+      {
+        // Single Line
+      }
+      <FunctionComponentI />
+      {
+        // Function component 1 ending
+        // Multiline with children
+      }
+      <FunctionComponentII name='Melvin'>
+        <div></div>
+      </FunctionComponentII>
+      {
+        // Single Line
+      }
+      <FunctionComponentII />
+      {
+        // Class component
+      }
+      <ClassComponent name='Ankit Nakarmi' />
+      Class State
+      {
+        //React State
+      }
+      <StateComponent />
+      Function State
+      {
+        //Function State
+      }
+      <FStateComponent />
     </div>
   );
 }
