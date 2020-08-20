@@ -1,0 +1,65 @@
+$btn-height: 54px;
+$btn-width: 220px;
+$hover-effect-color: #ece8e1;
+$btn-color: #ff4655;
+
+.valorant-simp-btn {
+  background-color: $btn-color;
+  border: none;
+  cursor: pointer;
+  height: $btn-height;
+  width: $btn-width;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+
+  .hover-effect {
+    background-color: $hover-effect-color;
+    top: 0;
+    left: -5%;
+    position: absolute;
+    transform: translateX(-100%) skewX(-24deg);
+    transition: transform 0.3s ease-out;
+    height: $btn-height;
+    width: 120%;
+    will-change: transform;
+  }
+
+  &-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 5px;
+  }
+  &::before {
+    left: 0;
+    top: 0;
+    background-color: #fff;
+  }
+  &::after {
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+  }
+  &:hover {
+    .valorant-simp-btn-content {
+      color: #333;
+    }
+    .hover-effect {
+      transform: translateX(0);
+    }
+  }
+}

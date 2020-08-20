@@ -5,6 +5,7 @@ import FunctionComponentI, { FunctionComponentII } from './function_compoment';
 import ClassComponent from './class_component';
 import StateComponent from './class_component/state_component';
 import FStateComponent from './function_compoment/f_state_component';
+import SimpleButtonComponent from './SimpleButtonComponent';
 function App() {
   return (
     <div className='App'>
@@ -44,6 +45,10 @@ function App() {
         //Function State
       }
       <FStateComponent />
+      {
+        // Simple Button Component
+      }
+      <SimpleButtonComponent>Download</SimpleButtonComponent>
     </div>
   );
 }
