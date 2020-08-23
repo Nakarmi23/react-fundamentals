@@ -6,6 +6,7 @@ import ClassComponent from './class_component';
 import StateComponent from './class_component/state_component';
 import FStateComponent from './function_compoment/f_state_component';
 import SimpleButtonComponent from './SimpleButtonComponent';
+import ConditionalRendering from './conditional_rendering';
 function App() {
   return (
     <div className='App'>
@@ -49,6 +50,10 @@ function App() {
         // Simple Button Component
       }
       <SimpleButtonComponent>Download</SimpleButtonComponent>
+      {
+        // Conditional rendering
+      }
+      <ConditionalRendering />
     </div>
   );
 }

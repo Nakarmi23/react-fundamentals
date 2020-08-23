@@ -3,7 +3,7 @@ import './style.scss';
 
 function SimpleButtonComponent(props) {
   return (
-    <button className={'valorant-simp-btn'}>
+    <button className={'valorant-simp-btn'} {...props}>
       <div className={'hover-effect'}></div>
       <span className={'valorant-simp-btn-content'}>{props.children}</span>
     </button>
