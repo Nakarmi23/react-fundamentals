@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // function useState(initialState) {
 //   var currentState = initialState;
@@ -13,6 +13,10 @@ import React, { useState } from 'react';
 // useState
 function FStateComponent() {
   let [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log('component Effect hook ran.');
+  });
 
   function decrement() {
     setCount(count - 1);
