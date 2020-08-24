@@ -8,6 +8,8 @@ import FStateComponent from './function_compoment/f_state_component';
 import SimpleButtonComponent from './SimpleButtonComponent';
 import ConditionalRendering from './conditional_rendering';
 import MapListComponent from './list_and_keys_component/map_list_component';
+import ForEachListComponent from './list_and_keys_component/for_each_list_component';
+
 function App() {
   return (
     <div className='App'>
@@ -59,6 +61,10 @@ function App() {
         // Map List Component
       }
       <MapListComponent />
+      {
+        // For Each List Component
+      }
+      <ForEachListComponent />
     </div>
   );
 }
