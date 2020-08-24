@@ -5,8 +5,8 @@ function ForEachListComponent() {
 
   function getNames() {
     let pName = [];
-    names.forEach((item) => {
-      pName.push(<p>{item}</p>);
+    names.forEach((item, index) => {
+      pName.push(<p key={index}>{item}</p>);
     });
     return pName;
   }
