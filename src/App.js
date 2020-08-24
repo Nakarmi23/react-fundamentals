@@ -7,6 +7,7 @@ import StateComponent from './class_component/state_component';
 import FStateComponent from './function_compoment/f_state_component';
 import SimpleButtonComponent from './SimpleButtonComponent';
 import ConditionalRendering from './conditional_rendering';
+import MapListComponent from './list_and_keys_component/map_list_component';
 function App() {
   return (
     <div className='App'>
@@ -54,6 +55,10 @@ function App() {
         // Conditional rendering
       }
       <ConditionalRendering />
+      {
+        // Map List Component
+      }
+      <MapListComponent />
     </div>
   );
 }
