@@ -10,6 +10,7 @@ import ConditionalRendering from './conditional_rendering';
 import MapListComponent from './list_and_keys_component/map_list_component';
 import ForEachListComponent from './list_and_keys_component/for_each_list_component';
 import ForListComponent from './list_and_keys_component/for_list_component';
+import FormComponent from './form_component/form_component';
 
 function App() {
   return (
@@ -70,6 +71,10 @@ function App() {
         // For List Component
       }
       <ForListComponent />
+      {
+        // For Component
+      }
+      <FormComponent />
     </div>
   );
 }
